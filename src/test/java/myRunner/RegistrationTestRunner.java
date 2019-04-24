@@ -57,23 +57,27 @@ public class RegistrationTestRunner {
     Reporter.setSystemInfo("Selenium", "3.11.0");
     Reporter.setSystemInfo("Maven", "3.5.2");
     Reporter.setSystemInfo("Java Version", "1.8.0_121");
+    testNGCucumberRunner.finish();
     //Log From Local to Execution Result Folder
     SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH-mm-ss");
-	Date date = new Date();
-	String returnDate = formatter.format(date);
-	File dest = new File("D:\\Execution_Result\\ExecutionResultsSummarycucumber" + returnDate);
-	dest.mkdirs();
-    File source = new File(System.getProperty("user.dir")+ "\\ExtentReport");
-    File source2 = new File(System.getProperty("user.dir")+ "\\target\\cucumber-reports");
-    try {
-        FileUtils.copyDirectory(source, dest);
-      //  FileUtils.copyDirectory(source2, dest);
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-    //
-    testNGCucumberRunner.finish();
+  	Date date = new Date();
+  	String returnDate = formatter.format(date);
+  	File dest = new File(System.getProperty("user.dir")+ "\\Execution_Result\\ExecutionResultsSummarycucumber" + returnDate);
+  	dest.mkdirs();
+      File source = new File(System.getProperty("user.dir")+ "\\ExtentReport");
+      File source2 = new File(System.getProperty("user.dir")+ "\\target\\cucumber-reports");
+            try {
+          FileUtils.copyDirectory(source, dest);
+          FileUtils.copyDirectory(source2, dest);
+      } catch (IOException e) {
+          e.printStackTrace();
+      }
+    
+      System.out.println("Execution Folder : " +dest);
+      //
+      }
+   
     }
    
    
-    }
+    

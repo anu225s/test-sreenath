@@ -57,7 +57,7 @@ public class TestRunner  {
     SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH-mm-ss");
   	Date date = new Date();
   	String returnDate = formatter.format(date);
-  	File dest = new File("D:\\Execution_Result\\ExecutionResultsSummarycucumber" + returnDate);
+  	File dest = new File(System.getProperty("user.dir")+ "\\Execution_Result\\ExecutionResultsSummarycucumber" + returnDate);
   	dest.mkdirs();
       File source = new File(System.getProperty("user.dir")+ "\\ExtentReport");
       File source2 = new File(System.getProperty("user.dir")+ "\\target\\cucumber-reports");
@@ -67,12 +67,7 @@ public class TestRunner  {
       } catch (IOException e) {
           e.printStackTrace();
       }
-      File file = new File(System.getProperty("user.dir")+ "\\ExtentReport\\ExtentreportSmoke.html");
-      File file1 = new File(System.getProperty("user.dir")+ "\\target\\cucumber-reports\\report1");
-      File file2 = new File(System.getProperty("user.dir")+ "\\target\\cucumber-reports\\report1.json");
-      file.delete();
-      file1.delete();
-      file2.delete();
+    
       System.out.println("Execution Folder : " +dest);
       //
       }

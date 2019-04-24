@@ -10,8 +10,7 @@ import java.util.Random;
 public class RandomCodeGenerator {
 	
 	public static String splitDateAndTime(String fieldName) {
-        
-		String dateAndTimeToBeSplitted[] = fieldName.split(" ", 2);
+        String dateAndTimeToBeSplitted[] = fieldName.split(" ", 2);
 		String date = dateAndTimeToBeSplitted[0];
 		return date;
 	}
@@ -52,7 +51,6 @@ public static String dateGenerator(String dateToBeAdded)
 	return exp;
 		
 	}
-
 	public static String panNoGenerator() {
 		String characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		String numbers="1234567890";

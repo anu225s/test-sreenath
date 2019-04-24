@@ -2,10 +2,6 @@ package utility;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-
-
-
 public class PageElement {
 	private By by;
 	private String fieldname;
