@@ -11,10 +11,10 @@
     <protocol>https</protocol>
     
    
-    <documentTitle>HMS Cucumber Framework</documentTitle>
+    <documentTitle>CIBIL Cucumber Framework</documentTitle>
     
   
-    <reportName>HMS Cucumber Report</reportName>
+    <reportName>CIBIL Cucumber Report</reportName>
     
   
     <dateFormat>yyyy-MM-dd</dateFormat>

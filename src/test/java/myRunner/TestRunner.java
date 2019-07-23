@@ -6,20 +6,21 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.codehaus.plexus.util.FileUtils;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@Listeners(MyListeners.class)
+//@Listeners(MyListeners.class)
 @CucumberOptions(features = ("D:\\TestGit\\BDD\\MavenProjectBDD\\src\\main\\resources\\features"), glue = {
 		"stepdefination" }, tags = { "@Important" }, plugin = { "pretty", "html:target/cucumber-reports/report",
 				"json:target/cucumber-reports/report.json",
-				"com.cucumber.listener.ExtentCucumberFormatter:ExtentReport/ExtentreportHTML.html" }, monochrome = true, dryRun = false)
+				"com.cucumber.listener.ExtentCucumberFormatter:ExtentReport/ExtentreportHTML.html" },
+				monochrome = true, dryRun = false)
 
 public class TestRunner {
 	private TestNGCucumberRunner testNGCucumberRunner;
@@ -67,5 +68,9 @@ public class TestRunner {
 
 		System.out.println("Execution Folder : " + dest);
 	}
-
+@AfterSuite(alwaysRun = true)
+public void sendMail() {
+	MyListeners l = new MyListeners();
+    l.onFinish(null);
+}
 }

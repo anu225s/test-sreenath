@@ -36,14 +36,14 @@ public class LoginTest{
 		driver=hook.beforeSetup();
 		hooks = new WebPage(driver);
 		loginTitle = new PageElement(By.xpath("//h4[contains(text(),'User Login')]"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		userName = new PageElement(By.name("username"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		password = new PageElement(By.name("password"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		loginBtn = new PageElement(By.name("submit"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBECLICKABLE, 10);
+		userName = new PageElement(By.name("username"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		password = new PageElement(By.name("password"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		loginBtn = new PageElement(By.name("submit"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBECLICKABLE, 1);
 		registration = new PageElement(By.linkText("Registration"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBECLICKABLE, 10);
 		
 	}
 
-	@When("^title login page HMS")
+	@When("^title login page CIBIL")
 	public void title_of_login_page_is_HMS(){
 		String title = hooks.getTitle(loginTitle);
 		System.out.println(title);
@@ -52,10 +52,10 @@ public class LoginTest{
 	}
 
 	@Then("^user enters username and password$")
-	public void user_enters_username_and_password(DataTable credentials) {
-		for (Map<String, String> data : credentials.asMaps(String.class, String.class)) {
-			hooks.clearAndSendKeys(userName, data.get("username"));
-			hooks.clearAndSendKeys(password, data.get("password"));
+	public void user_enters_username_and_password(DataTable data) {
+		for (Map<String, String> mapref : data.asMaps(String.class, String.class)) {
+			hooks.clearAndSendKeys(userName, mapref.get("username"));
+			hooks.clearAndSendKeys(password, mapref.get("password"));
 
 		}
 	}

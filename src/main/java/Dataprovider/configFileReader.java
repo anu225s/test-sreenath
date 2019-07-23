@@ -49,7 +49,7 @@ public class configFileReader {
 	 }
 	 
 	 public String getApplicationUrl() {
-	 String url = properties.getProperty("url");
+	 String url = properties.getProperty("Hosturl");
 	 if(url != null) return url;
 	 else throw new RuntimeException("Application Url not specified in the Configuration.properties file for the Key:url");
 	 }

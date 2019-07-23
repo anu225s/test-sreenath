@@ -2,44 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28938" started-at="2019-05-02T10:15:51Z" finished-at="2019-05-02T10:16:20Z">
+  <suite name="Default suite" duration-ms="72091" started-at="2019-06-25T05:21:09Z" finished-at="2019-06-25T05:22:22Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@4e9ba398]" name="feature" class="myRunner.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@3108bc]" name="feature" class="myRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="28938" started-at="2019-05-02T10:15:51Z" finished-at="2019-05-02T10:16:20Z">
+    <test name="Default test" duration-ms="72091" started-at="2019-06-25T05:21:09Z" finished-at="2019-06-25T05:22:22Z">
       <class name="myRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:myRunner.TestRunner@4e9ba398]" name="setUpClass" is-config="true" duration-ms="218" started-at="2019-05-02T10:15:51Z" finished-at="2019-05-02T10:15:51Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:myRunner.TestRunner@3108bc]" name="setUpClass" is-config="true" duration-ms="333" started-at="2019-06-25T05:21:09Z" finished-at="2019-06-25T05:21:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@4e9ba398]" name="feature" duration-ms="9282" started-at="2019-05-02T10:15:51Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-02T10:16:01Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@3108bc]" name="feature" duration-ms="29384" started-at="2019-06-25T05:21:10Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-25T05:21:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[HMS Login Feature]]>
+                <![CDATA[Cibil Login Feature]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@4e9ba398]" name="feature" duration-ms="18935" started-at="2019-05-02T10:16:01Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-02T10:16:20Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:myRunner.TestRunner@3108bc]" name="feature" duration-ms="38708" started-at="2019-06-25T05:21:39Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-25T05:22:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[HMS Registration Feature]]>
+                <![CDATA[CIBIL Registration Feature]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:myRunner.TestRunner@4e9ba398]" name="tearDownClass" is-config="true" duration-ms="422" started-at="2019-05-02T10:16:20Z" finished-at="2019-05-02T10:16:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:myRunner.TestRunner@3108bc]" name="tearDownClass" is-config="true" duration-ms="3557" started-at="2019-06-25T05:22:18Z" finished-at="2019-06-25T05:22:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:myRunner.TestRunner@3108bc]" name="sendMail" is-config="true" duration-ms="3372" started-at="2019-06-25T05:22:22Z" finished-at="2019-06-25T05:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
       </class> <!-- myRunner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -9,7 +9,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
@@ -75,18 +74,18 @@ public class MyListeners implements ITestListener {
 			File fin = new File(fileName);
 			if (fin.exists())
 				fin.delete();
-			String file1= System.getProperty("user.dir") + "\\Execution_Result\\ResultSummary\\"+"";
-		//	String file1 = "D:\\Execution_Result"+"";
+			String file1 = System.getProperty("user.dir") + "\\Execution_Result\\ResultSummary\\" + "";
+			// String file1 = "D:\\Execution_Result"+"";
 			pack(file1, fileName);
-			String to[] = { "ashok.tripathi@aqmtechnologies.com" };
+			String to[] = { "faizan.khan@aqmtechnologies.com" };
 			String cc[] = { "ashok.tripathi@aqmtechnologies.com" };
 			try {
 				send("ashok.tripathi@aqmtechnologies.com", to, "Cucumber Report", "Check the zip attachment.", cc);
 			} catch (MessagingException e) {
-				// TODO Auto-generated catch block
+
 				e.printStackTrace();
 			} catch (DocumentException e) {
-				// TODO Auto-generated catch block
+
 				e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {

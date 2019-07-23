@@ -1,7 +1,7 @@
 @Important
-Feature: HMS Login Feature
+Feature: Cibil Login Feature
 Background:
-When title login page HMS
+When title login page CIBIL
 Then user enters username and password
 
 | username |password|
@@ -9,7 +9,5 @@ Then user enters username and password
 Then user clicks login button
 
 @Regression
-Scenario: HMS Registration Tests Scenario
+Scenario: CIBIL Registration Tests Scenario
 Then user clicks registration links
-
-

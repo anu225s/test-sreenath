@@ -23,22 +23,40 @@ public class Hooks {
 			loadConfigProperties();
 			getExecutionResultsBaseFolder();
 			String browsername = p.getProperty("browser");
-			if (browsername.equalsIgnoreCase("chrome")) {
+			switch (browsername)
+	         {
+	             case "chrome":
+	            	 System.setProperty("webdriver.chrome.driver",
+	 						System.getProperty("user.dir")+ "\\driver\\chromedriver.exe");
+	 				this.driver = new ChromeDriver();
+	              break;
+	             case "ie":
+	            	 System.setProperty("webdriver.ie.driver",
+	 						System.getProperty("user.dir")+ "\\driver\\IEDriverServer.exe");
+	            	 this.driver = new InternetExplorerDriver();
+	             break;
+	             case "firefox":
+	            	 System.setProperty("webdriver.gecko.driver",
+	 						System.getProperty("user.dir")+ "\\driver\\geckodriver.exe");
+	            	 this.driver = new FirefoxDriver();
+	             break;
+	         }
+			/*if (browsername.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir")+ "\\driver\\chromedriver.exe");
-				this.driver = new ChromeDriver();
+				driver = new ChromeDriver();
 			}
-			if (browsername.equalsIgnoreCase("firefox")) {
+			 if(browsername.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir")+ "\\driver\\geckodriver.exe");
-				this.driver = new FirefoxDriver();
+				driver = new FirefoxDriver();
 
 			}
-			if (browsername.equalsIgnoreCase("ie")) {
+			if(browsername.equalsIgnoreCase("ie")) {
 				System.setProperty("webdriver.ie.driver",
 						System.getProperty("user.dir")+ "\\driver\\IEDriverServer.exe");
-				this.driver = new InternetExplorerDriver();
-			}
+				driver = new InternetExplorerDriver();
+			}*/
 			DOMConfigurator.configure(System.getProperty("user.dir")+ "\\Config\\log4j.xml");
 			driver.get(p.getProperty("Hosturl"));
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -70,10 +88,10 @@ public class Hooks {
 		
 	}
 
-	public WebDriver setup(String browser) throws Exception {
+	/*public WebDriver setup(String browser) throws Exception {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 
-	}
+	}*/
 }

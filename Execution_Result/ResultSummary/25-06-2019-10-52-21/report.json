@@ -1,0 +1,398 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9469866223,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "title login page CIBIL",
+            "match": {
+              "location": "LoginTest.title_of_login_page_is_HMS()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 217027651,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginTest.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "user1",
+                  "user1"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15038672440,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks login button",
+            "match": {
+              "location": "LoginTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "CIBIL Registration Tests Scenario",
+        "description": "",
+        "id": "cibil-login-feature;cibil-registration-tests-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 646964863,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3646794193,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks registration links",
+            "match": {
+              "location": "LoginTest.user_clicks_registration_link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Cibil Login Feature",
+    "description": "",
+    "id": "cibil-login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Important"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3582739334,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "title login page CIBIL",
+            "match": {
+              "location": "LoginTest.title_of_login_page_is_HMS()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 159544198,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginTest.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "user1",
+                  "user1"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13932325575,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks login button",
+            "match": {
+              "location": "LoginTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "CIBIL Registration Test Scenario",
+        "description": "",
+        "id": "cibil-registration-feature;cibil-registration-test-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 622105601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4506560702,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks registration links",
+            "match": {
+              "location": "LoginTest.user_clicks_registration_link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Important"
+          },
+          {
+            "line": 11,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3770002261,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "title login page CIBIL",
+            "match": {
+              "location": "LoginTest.title_of_login_page_is_HMS()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194614374,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginTest.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "user1",
+                  "user1"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8453652220,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks login button",
+            "match": {
+              "location": "LoginTest.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "CIBIL Permanent Registration",
+        "description": "",
+        "id": "cibil-registration-feature;cibil-permanent-registration;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 656614792,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 359986593,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks registration links",
+            "match": {
+              "location": "LoginTest.user_clicks_registration_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2401942243,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "fill the registration form \"Rahul\" and \"singh\" and \"04-02-2009\" and \"25\" and \"APGPT4906H\" and \"raheza plaza ghatkopar\" and \"8801320960\" and \"400806\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rahul",
+                  "offset": 28
+                },
+                {
+                  "val": "singh",
+                  "offset": 40
+                },
+                {
+                  "val": "04-02-2009",
+                  "offset": 52
+                },
+                {
+                  "val": "25",
+                  "offset": 69
+                },
+                {
+                  "val": "APGPT4906H",
+                  "offset": 78
+                },
+                {
+                  "val": "raheza plaza ghatkopar",
+                  "offset": 95
+                },
+                {
+                  "val": "8801320960",
+                  "offset": 124
+                },
+                {
+                  "val": "400806",
+                  "offset": 141
+                }
+              ],
+              "location": "RegistrationTest.fill_the_registration_form(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Important"
+          },
+          {
+            "line": 18,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "CIBIL Registration Feature",
+    "description": "",
+    "id": "cibil-registration-feature",
+    "keyword": "Feature",
+    "uri": "Registration.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Important"
+      }
+    ]
+  }
+]

@@ -1,6 +1,4 @@
 package stepdefination;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import base.Hooks;
@@ -8,7 +6,6 @@ import cucumber.api.java.en.Then;
 import utility.ExternalData;
 import utility.PageElement;
 import utility.WaitType;
-
 
 public class RegistrationTest{
 	WebDriver driver;
@@ -44,17 +41,17 @@ public class RegistrationTest{
 	public RegistrationTest(Hooks hook) {
 		driver=hook.beforeSetup();
 		hooks = new WebPage(driver);
-		patientCatagoryDropDown = new PageElement(By.name("PATIENT_CAT"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		nameTitleDropDown = new PageElement(By.name("TITLE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		firstNameTextField = new PageElement(By.name("PNT_NAME"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		lastNameTextField = new PageElement(By.name("LAST_NAME"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		dobTextField = new PageElement(By.name("DOB"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		ageTextField = new PageElement(By.name("AGE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
-		genderDropDown = new PageElement(By.name("SEX"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		mrtlStatusDropDown = new PageElement(By.name("MTRL_STATUS"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		religionDropDown = new PageElement(By.name("RELIGION"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		languageDropDown = new PageElement(By.name("PLANGUAGE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
-		relationDropDown = new PageElement(By.name("RELATION"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
+		patientCatagoryDropDown = new PageElement(By.name("PATIENT_CAT"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 2);
+		nameTitleDropDown = new PageElement(By.name("TITLE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
+		firstNameTextField = new PageElement(By.name("PNT_NAME"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		lastNameTextField = new PageElement(By.name("LAST_NAME"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		dobTextField = new PageElement(By.name("DOB"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		ageTextField = new PageElement(By.name("AGE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 1);
+		genderDropDown = new PageElement(By.name("SEX"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
+		mrtlStatusDropDown = new PageElement(By.name("MTRL_STATUS"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
+		religionDropDown = new PageElement(By.name("RELIGION"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
+		languageDropDown = new PageElement(By.name("PLANGUAGE"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
+		relationDropDown = new PageElement(By.name("RELATION"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 1);
 		patientIdentityDropDown = new PageElement(By.name("PAT_IDENTITY"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);
 		patientIdentityProofTextField = new PageElement(By.name("PAT_IDENTITY_PROOF"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEEENABLED, 10);
 		nationalityDropDown = new PageElement(By.name("NATIONALITY"), "Search Exch Drop Down List", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 10);

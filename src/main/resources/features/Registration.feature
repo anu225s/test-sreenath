@@ -1,7 +1,7 @@
 @Important
-Feature: HMS Registration Feature
+Feature: CIBIL Registration Feature
 Background:
-When title login page HMS
+When title login page CIBIL
 Then user enters username and password
 
 | username |password|
@@ -9,14 +9,14 @@ Then user enters username and password
 Then user clicks login button
 
 @Regression
-Scenario Outline:HMS Registration Test Scenario
+Scenario Outline:CIBIL Registration Test Scenario
 Then user clicks registration links
 Examples:
 | username |password|
 | user1   | user1 |
 
 @Smoke
-Scenario Outline:HMS Permanent Registration
+Scenario Outline:CIBIL Permanent Registration
 Then user clicks registration links
 Then fill the registration form "<firstname>" and "<lastname>" and "<dob>" and "<age>" and "<panNo>" and "<address1>" and "<mobileno>" and "<zipcode>"
 Examples:
